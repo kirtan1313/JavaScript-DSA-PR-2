@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function indexOfSubstring(str, str1) {
+            for (let i = 0; i <= str.length - str1.length; i++) {
+                let j;
+                for (j = 0; j < str1.length; j++) {
+                    if (str.charAt(i + j) !== str1.charAt(j)) {
+                        break;
+                    }
+                }
+                if (j === str1.length) {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
+        
+        let str = "hello world";
+        let str1 = "world";
+        console.log(indexOfSubstring(str, str1)); 
+
+
+
+
+    </script>
+</body>
+
+</html>

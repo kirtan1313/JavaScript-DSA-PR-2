@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        function reverseWords(str) {
+            
+            str = str.trim();
+
+          
+            let words = str.split(/\s+/);
+
+            
+            let reversedWords = words.reverse();
+
+            
+            let reversedStr = reversedWords.join(' ');
+
+            return reversedStr;
+        }
+
+       
+        const inputString = "   Hello   world!    ";
+        console.log(reverseWords(inputString)); 
+
+
+    </script>
+</body>
+
+</html>
